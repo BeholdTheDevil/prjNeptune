@@ -1,0 +1,99 @@
+body {
+	padding: 0;
+	height: auto;
+	margin: 0;
+	max-width: 100vw;
+	position: relative;
+	background-image: url("../cloud_stock_background.jpg");
+
+}
+
+.canvas {
+	width: 100%;
+}
+
+.headertext {
+	font-family: 'PT Sans', sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.text {
+	font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.buttons {
+	width: 615px;
+	margin: auto;
+	margin-top: 4%;
+}
+
+.button_style {
+	margin: auto;
+	display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    background-color: transparent;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 19px 15px 17px;
+    font-size: 14px;
+    line-height: 1em;
+    border: none;
+    border-radius: 2px;
+    min-width: 170px;
+    color: #fff;
+    background-color: #252525;
+    border: 1px solid #252525;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.button_style:hover {
+	background-color: #000;
+}
+
+.content {
+	width: 100%;
+	padding-top: 15%;
+}
+
+#intro {
+	font-size: 14px;
+	margin: 0;
+	text-align: center;
+}
+
+#about {
+	margin-top: 30%;
+	width: 100%;
+	min-width: 100%;
+	height: 500px;
+	background-color: #252525;
+}
+
+#about_columns {
+	margin: auto;
+	padding-top: 3%;
+	width: 60%;
+	height: 40%;
+}
+
+#about_column_one {
+	width: 45%;
+	float: left;
+}
+
+#about_column_two {
+	width: 45%;
+	float: left;
+	margin-left: 10%;
+}

@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="swe">
+<html lang="sv">
 <head>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|PT+Sans">
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="toggle.js"></script>
+	<script src="scroll.js"></script>
 	<meta charset="UTF-8">
 	<title>Project Neptune</title>
 </head>
-<body>
+<body id="body">
 	<div class="canvas">
 		<div class="content">
-			<div class="logo_background">
-				<img src="totally_not_ubuntu.jpg" alt="logo" id="logotype_image">
-			</div>
 			<div class="buttons">
 				<a href="/about" class="button_style">About Me</a>
 				<a href="/projects" class="button_style">Projects</a>
 				<a href="/contact" class="button_style">Contact</a>
 			</div>
-			<div id="about"> 
+			<div id="about">
 				<div id="about_columns">
 					<p class="text" id="about_column_one">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -35,23 +36,27 @@
 			</div>
 		</div>
 		<div id="overlay">
-			<div id="menu-trigger" class="mobile-trigger menu-trigger" onclick="toggle()">
-				<a href="#" class="icon"><span class="sr-only">Menu</span></a>
+			<div id="nav-bar">
+				<div class="menu-button">
+					<div id="menu-trigger" class="mobile-trigger menu-trigger menu-trigger-not-active" onclick="toggle()">
+						<a href="#" class="icon"><span class="sr-only">Menu</span></a>
+					</div>
+				</div>
+				<div class="text_box">
+					<h1 class="headertext" id="name">Anton Degerfeldt</h1>
+					<!--<h2 class="headertext" id="intro">Student programmer from Umeå, Sweden</h2>-->
+				</div>
+				<i class="fa fa-search fa-2x" aria-hidden="true"></i>
 			</div>
-			<div class="text_box">
-				<h1 class="text" id="name">Anton Degerfeldt</h1>
-				<h2 class="text" id="intro">Student programmer from Umeå, Sweden</h2>
+			<div id="hamburger_menu" class="hidden">
+				<div class="menu_content" onclick="scrollTo('#body')"><p class="menu_text">Home</p></div>
+				<div class="menu_content" onclick="scrollTo('#about')"><p class="menu_text">About me</p></div>
+				<div class="menu_content"><p class="menu_text">Dolor</p></div>
+				<div class="menu_content"><p class="menu_text">Sit</p></div>
+				<div class="menu_content"><p class="menu_text">Amet</p></div>
+				<div class="menu_content"><p class="menu_text">Consectetur</p></div>
+				<div class="menu_content"><p class="menu_text">Adipisicing</p></div>
 			</div>
-			<i class="fa fa-search fa-2x" aria-hidden="true"></i>
-		</div>
-		<div id="hamburger_menu">
-			<p class="menu_text" id="opt1">Lorem</p>
-			<p class="menu_text" id="opt2">Ipsum</p>
-			<p class="menu_text" id="opt3">Dolor</p>
-			<p class="menu_text" id="opt4">Sit</p>
-			<p class="menu_text" id="opt5">Amet</p>
-			<p class="menu_text" id="opt6">Consectetur</p>
-			<p class="menu_text" id="opt7">Adipisicing</p>
 		</div>
 	</div>
 </body>
